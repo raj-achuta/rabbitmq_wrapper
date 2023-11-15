@@ -8,7 +8,11 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-
+    services:
+      rabbitmq:
+        image: rabbitmq
+        ports:
+          - 5672:5672
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js
@@ -18,9 +22,3 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm test:ci
-  
-  services:
-    rabbitmq:
-      image: rabbitmq
-      ports:
-        - 5672:5672
