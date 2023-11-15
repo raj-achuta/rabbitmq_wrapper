@@ -3,6 +3,8 @@
 This is built on top amqplib which helps your team to write the consumer & publisher faster.
 This is built thinking in the mind of worker queues pattern.
 
+While creating any queues through the wrapper will automitically create and DLQ & retry.
+
 ## How to use?
 Add this package under the dependencies.
 
