@@ -13,6 +13,9 @@
     "test:ci": "jest --detectOpenHandles --runInBand --silent --coverage",
     "test": "MQ_HOST=localhost npm run test:ci"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "amqplib",
     "rabbitmq",
