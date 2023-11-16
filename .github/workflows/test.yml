@@ -25,5 +25,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm run test:ci
+      - name: Update Coverage Badge
+        uses: we-cli/coverage-badge-action@main
     env:
         MQ_HOST: 127.0.0.1

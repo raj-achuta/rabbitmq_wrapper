@@ -1,3 +1,5 @@
++ [![cov](https://we-cli.github.io/jayin/badges/coverage.svg)](https://github.com/we-cli/jayin/actions)
+
 # RabbitMQ Wrapper
 
 This is built on top amqplib which helps your team to write the consumer & publisher faster.
